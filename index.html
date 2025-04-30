@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Thankiuoo - A platform to share heartfelt thank you messages and spread gratitude around the world">
+    <meta name="theme-color" content="#5B9AD9">
+    <title>Thankiuoo - Share Gratitude with the World</title>
+    <link rel="icon" type="image/x-icon" href="images/bitmap-removebg-preview (3) (1).png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bitmap-removebg-preview (3) (2).png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/bitmap-removebg-preview (3) (3).png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="google-site-verification" content="X8LLAf0gHQ7lkat6bbfmucVg9xH2_haGhGYtAovViUA" />
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="container header-container">
+            <div class="logo"><span class="sr-only">Thankiuoo</span>Thankiuoo</div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#top" class="active">Home</a></li>
+                    <li><a href="#wall">Wall of Gratitude</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="container">
+            <section id="top" class="hero">
+                <h1 class="animate__animated animate__fadeIn">Share Gratitude with the World</h1>
+                <p class="subtitle animate__animated animate__fadeIn animate__delay-1s">A platform where kindness is celebrated and thank you notes create ripples of positivity.</p>
+                
+                <div class="sample-card animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="card-content">
+                        <p>"To the kind soul who helped me carry my groceries up the stairs when I was struggling - your simple act of kindness meant more than words can express. In a world that often feels rushed, you took the time to notice and help. Thank you for reminding me that kindness still exists in everyday moments."</p>
+                        <div class="card-meta">
+                            <div>
+                                <span class="name">Sarah</span>
+                                <span class="location">Apartment Building</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="create-btn" class="main-cta-btn animate__animated animate__fadeIn animate__delay-3s" aria-label="Write a thank you note">Write a Thank You</button>
+            </section>
+            
+            <section id="wall" class="wall-of-gratitude" role="region" aria-label="Wall of Gratitude">
+                <h2>Wall of Gratitude</h2>
+                <p class="section-subtitle">Browse through heartfelt messages from people around the world</p>
+                <div class="filter-buttons" role="toolbar" aria-label="Filter thank you notes">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">All Notes</button>
+                    <button class="filter-btn" data-filter="Help" aria-pressed="false">Helpful Acts</button>
+                    <button class="filter-btn" data-filter="Kindness" aria-pressed="false">Kind Gestures</button>
+                    <button class="filter-btn" data-filter="Lost and Found" aria-pressed="false">Lost & Found</button>
+                </div>
+                <div id="thank-you-cards" class="cards-container" aria-live="polite">
+                    <!-- Thank you cards will be loaded here dynamically -->
+                    <div class="loader" aria-label="Loading thank you notes"></div>
+                </div>
+            </section>
+
+            <section id="about" class="about-section" role="region" aria-label="About Thankiuoo">
+                <h2>About Thankiuoo</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Thankiuoo is a platform where you can express gratitude to strangers who have made a positive impact on your day, no matter how small. In a world that often moves too quickly, we believe in the power of acknowledging acts of kindness.</p>
+                        <p>Every thank you note shared here is a reminder that small actions matter, and that kindness can truly change someone's world.</p>
+                        <p>Join our growing community of gratitude and help us create a more appreciative world, one thank you at a time.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✨</div>
+                            <h3>Share Gratitude</h3>
+                            <p>Post your thank you messages to people who've brightened your day</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">❤️</div>
+                            <h3>Spread Positivity</h3>
+                            <p>Like and engage with heartwarming stories from around the world</p>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">🌍</div>
+                            <h3>Build Community</h3>
+                            <p>Be part of a global movement celebrating kindness and gratitude</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">Thankiuoo</div>
+                    <p>Spreading gratitude, one thank you at a time.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#wall">Wall of Gratitude</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="mailto:contact.rhythunand@gmail.com">Payment Support</a></li>
+                        <li><a href="mailto:contact.rhythunand@gmail.com">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/thankssome1/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:contact.rhythunand@gmail.com" aria-label="Contact us via email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <p class="email-text">Email us at: contact.rhythunand@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Thankiuoo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for creating a thank you note -->
+    <div id="thank-you-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content animate__animated animate__fadeInUp">
+            <span class="close-btn" role="button" tabindex="0" aria-label="Close modal">&times;</span>
+            <h2 id="modal-title">Share Your Thank You</h2>
+            <form id="thank-you-form">
+                <label for="message">Your thank you message</label>
+                <textarea id="message" placeholder="Write your thank you note here... Who made your day better and how?" required aria-required="true"></textarea>
+                
+                <label for="name">Your name (optional)</label>
+                <input type="text" id="name" placeholder="How should we call you? (optional)" aria-required="false">
+                
+                <label for="location">Where did it happen? (optional)</label>
+                <select id="location" aria-required="false">
+                    <option value="">Select location (optional)</option>
+                    <option value="Coffee Shop">Coffee Shop</option>
+                    <option value="Park">Park</option>
+                    <option value="Subway/Metro">Subway/Metro</option>
+                    <option value="Store/Shop">Store/Shop</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Street">Street</option>
+                    <option value="Office">Office</option>
+                    <option value="School">School</option>
+                    <option value="Online">Online</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="custom-location" class="custom-location-input" placeholder="Please specify the location" style="display: none;">
+                <button type="submit" id="submit-btn">Share My Thank You</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success notification -->
+    <div id="notification" class="notification" role="alert" aria-live="assertive">
+        <p>Thank you sent! Your gratitude is now in the world 🙏</p>
+    </div>
+
+    <!-- Fixed floating button that appears when scrolling down -->
+    <button id="floating-create-btn" class="floating-btn animate__animated animate__fadeIn" aria-label="Write a thank you note">Write a Thank You</button>
+
+    <!-- Firebase SDK - Modular Version -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+      import { getFirestore, collection, addDoc, getDocs, updateDoc, doc, increment, serverTimestamp, orderBy, limit, where, query, startAfter } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+      
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDhRUUPeONWkYYCLktHvbD2COMK_ueXtRo",
+        authDomain: "thank-someone.firebaseapp.com",
+        projectId: "thank-someone",
+        storageBucket: "thank-someone.firebasestorage.app",
+        messagingSenderId: "24440206186",
+        appId: "1:24440206186:web:f254a6f5644fd637442b13"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      
+      // Make Firebase services available globally
+      window.firebaseApp = app;
+      window.firestoreDB = db;
+      window.firestoreModules = {
+        collection,
+        addDoc,
+        getDocs,
+        updateDoc,
+        doc,
+        increment,
+        serverTimestamp,
+        orderBy,
+        limit,
+        where,
+        query,
+        startAfter
+      };
+    </script>
+    
+    <script src="app.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html> 
